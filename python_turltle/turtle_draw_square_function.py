@@ -1,4 +1,4 @@
-""" Turtle draws square. """
+""" Turtle draws squares. """
 
 import turtle
 
@@ -20,6 +20,13 @@ def draw_square(turtle, size):
 
 # function call
 draw_square(alexa, 50)
+
+alexa.penup()
+alexa.goto(100,100)
+alexa.pendown()
+
+draw_square(alexa,75)  
+
 
 wn.exitonclick()
 
