@@ -1,3 +1,7 @@
+
+#https://docs.python.org/3/py-modindex.html
+
+
 import math
 
 print(math.pi) # returns math pi - use this not 3.14.... becasuer of floating point precision issues
@@ -26,11 +30,43 @@ for counter in range(howmany):
     arandom = random.random()
     print(arandom)
 
+#-----------------------------------------------------------------------
+
+""" Questions got wrong on homework and tests."""
+
+""" Last homework assignemt -  multiple choice: 
+
+Question 1:  Select the Python math module function that give you the Euclidean norm, square root of 
+x*x + y*y. This is the length of the vector from the origin to point (x, y).
+    
+    answer: hypot
+
+Question 7:   What Python line(s) of code that guarantee to give a random integer only 
+between 10 and 100 inclusive both ends?
+    
+    answers: 
+        - 10+ int(91*random.random()) 
+        - random.randint(10, 100)     -------- ? double check
+        - random.randrange(10, 101)
+
+Question 10:   Select all the lines of code that give you the sine value of the angle 150 degrees. 
+You can presume you already imported the math module with the command import math.
+    
+    answers:
+        - math.sin(math.radians(150))
+        - math.sin(math.pi*5/6) 
+
+"""
+
 
 # -----------------------------------------------------------------
 
-# Module index
+# Module index:
     # https://docs.python.org/3/py-modindex.html
+
+# Order of Precedence:
+    # *, +, !=, >=, not, and 
+
 
 # Vacabulary to know for imports:
     # import math       -  is a module
