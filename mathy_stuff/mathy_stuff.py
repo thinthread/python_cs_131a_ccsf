@@ -41,6 +41,14 @@ x*x + y*y. This is the length of the vector from the origin to point (x, y).
     
     answer: hypot
 
+Question 4:   not x > y
+    
+    answer: 
+        - x > y is false
+        - x < y
+        - x = y
+
+
 Question 7:   What Python line(s) of code that guarantee to give a random integer only 
 between 10 and 100 inclusive both ends?
     
@@ -64,9 +72,11 @@ You can presume you already imported the math module with the command import mat
 # Module index:
     # https://docs.python.org/3/py-modindex.html
 
-# Order of Precedence:
-    # *, +, !=, >=, not, and 
+# Order of Precedence most importent to least import:
+    # **(powers top1), *(multiplication, top2), devision top3), +(then addition/subtraction left to right), -,
+    # then the comparative operatores left to right !=, >=, not, and 
 
+    # Note about powers - read from left to right
 
 # Vacabulary to know for imports:
     # import math       -  is a module
