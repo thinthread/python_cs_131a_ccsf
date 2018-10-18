@@ -1,7 +1,5 @@
 #https://docs.python.org/3/py-modindex.html
 
-
-
 # Question 
 def function():
     """   """
