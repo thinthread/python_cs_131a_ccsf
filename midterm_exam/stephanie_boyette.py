@@ -1,61 +1,58 @@
-#https://docs.python.org/3/py-modindex.html
-
-# Question 
-def function():
-    """   """
-    pass
+# Question 12
+def print_string_word(phrase):
+    "Print out the word Programming from the given phrase"
+    return phrase[7:]
 
 
-# Question
-def function():
-    """   """
-    pass
+# Question 13
+def print_powers_2(n):
+    """ Return the sum of squares of integers up to any given number of terms, 
+    n as in 12 + 22 + 32 + .........+ n2, where n = 4"""
+    sum_total = 0
+    
+    counter_num = 1
+    
+    while counter_num <= n:
+        sum_total = sum_total + counter_num ** 2
+        counter_num += 1
+        
+    return sum_total
 
 
+# Question 14
+def print_reversed_string(str):
+    """Given a string input, use a shorthand method to reverse a string, return and print it"""
 
-# Question
-def function():
-    """   """
-    pass
-
-
+    return str[::-1]
 
 
-# Question 
-def function():
-    """    """
-    pass
-
-
-
-
-def delay_turtle():
-    """Delay start of Python Turtle module. This gives the user time to read instructions & 
-    usefull info to user on what to expect from the behavior of the program."""
-
-    import time
-    for i in range(1):
-        print("*** Note - Python Turtle will commence in 5 seconds.***")
-        print("To exit the Python Turtle screen, click on the Turle sand-box when drawing is complete.")
-        print("This will allow the rest of the code in this module to execute...\nHappy code viewing!")
-
-        time.sleep(5)
+# Quesiton 15
+def is_secure_site(url):
+    """ Given a URL, check whether this URL belongs to a secure site, eg:'https:'"""
+    
+    if url[0:6] == "https:":
+        return "YAY,this site is secure!"
+    else:
+        return "Sorry, this is not a secure site... :-(("
 
 
 def main():
 
-    import turtle
-    screen = turtle.Screen()
-    alexa = turtle.Turtle()
-    alexa.shape("turtle")
+    # Question 12
+    phrase = "Python Programming"
+    print(print_string_word(phrase))
 
 
+    # Question 13
+    print(print_powers_2(4))
 
 
-    screen.exitonclick()
+    # Question 14
+    print(print_reversed_string("Python"))
 
-
-
+    # Question 15
+    url_to_check = input("Please submit a url to check if it secure: ")
+    print(is_secure_site(url_to_check))
 
 
 main()

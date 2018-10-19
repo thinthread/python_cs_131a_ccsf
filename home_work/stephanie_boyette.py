@@ -288,7 +288,6 @@ def tidy_user_input(user_str):
     numbers_to_draw = user_str.strip(" ")
     numbers_to_draw = numbers_to_draw.replace(" ", "")
 
-
     if numbers_to_draw.isdigit():
         return numbers_to_draw
     else:
